@@ -5,7 +5,7 @@
     <img align="center"  src="pagsite.jpg" />
   </a>
 </p>
-<p>Caso queria acessar a area do ADM e testar as funções Insert e Delete
+<p>Caso queira acessar a area do ADM e testar as funções Insert e Delete
   
  Email: briantbini@outlook.com
  Senha: 123456
