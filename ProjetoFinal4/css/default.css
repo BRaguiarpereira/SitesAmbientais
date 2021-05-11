@@ -1,0 +1,589 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(../Fontes/Raleway/Raleway-Regular.ttf);
+}
+html, body {
+    height: 100%;
+/*    background-color: #20F5B1*/
+}
+header nav ul {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    z-index: 10;
+    position: fixed;
+}
+header nav ul li {
+    margin: 10px 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+header nav ul li a {
+    text-decoration: none;
+    padding: 16px;
+    color: #0c3;
+}
+header nav ul li a:not(#logo):hover {
+    background-color: #0c3;
+    color: #fff;
+}
+textarea {
+    resize: none;
+}
+header #logo {
+    width: 33px;
+}
+header nav ul .usuario {
+    margin-left: 500px;
+}
+header nav ul .usuario_adm {
+    margin-left: 1000px;
+}
+header nav ul .usuario_adm a#red {
+    color: red;
+}
+header nav ul .usuario_adm a#red:hover {
+    background-color: red;
+    color: #fff;
+}
+.frm {
+    margin: 20px auto auto 100px;
+}
+.frm input, .frm textarea {
+    width: 700px;
+    margin: 5px auto 25px;
+    font-size: 1rem;
+    display: inline-block;
+    font-family: 'Raleway'}
+.frm select, .frm input[type='number'], .frm input[type='date'] {
+    width: 230px;
+    margin: 5px auto 25px;
+    font-size: 1rem;
+    display: inline-block;
+    font-family: 'Raleway'}
+form input[type='text'], form input[type='textarea'] {
+    text-transform: capitalize;
+}
+form input {
+    padding-left: 15px;
+}
+.campo {
+    height: 50px;
+    background-color: #E5E5E5;
+    border: none;
+}
+.frm input[type='checkbox'] {
+    margin-left: -300px;
+}
+.frm label a {
+    padding: 10px;
+    text-decoration: none;
+}
+.frm label a:hover {
+    text-decoration: underline;
+}
+form.busca input, form.filtro select.campo {
+    width: 230px;
+    text-align: center;
+    font-family: 'Raleway';
+    left: 10px;
+    font-size: 1rem;
+    color: #5E5D5D;
+}
+form.busca_usu input, form.filtro_usu select.campo {
+    width: 430px;
+    text-align: center;
+    font-family: 'Raleway';
+    left: 10px;
+    font-size: 1rem;
+    color: #5E5D5D;
+}
+.fl {
+    float: left;
+}
+button.buscar {
+    width: 50px;
+    height: 50px;
+    margin: -2px auto auto;
+    vertical-align: middle;
+    background: #5E5D5D url(../imagens/icone_busca.jpg) no-repeat center;
+    background-size: 50px;
+    border: 1px solid #0c3;
+    cursor: pointer;
+}
+button.buscar:hover {
+    background: #5E5D5D url(../imagens/icone_busca_branca.jpg) no-repeat center;
+    background-size: 50px;
+}
+button.buscar_data {
+    width: 50px;
+    height: 50px;
+    margin: 5px auto auto;
+    vertical-align: middle;
+    background: #5E5D5D url(../imagens/icone_busca.jpg) no-repeat center;
+    background-size: 50px;
+    border: 1px solid #0c3;
+    cursor: pointer;
+}
+button.buscar_data:hover {
+    background: #5E5D5D url(../imagens/icone_busca_branca.jpg) no-repeat center;
+    background-size: 50px;
+}
+h1 {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    color: #0c3;
+}
+section {
+    margin-top: 70px;
+    position: absolute;
+}
+section.eric {
+    width: 100%}
+section div.frm iframe.pdf {
+    width: 1200px;
+    height: 1200px;
+    margin: 30px auto 100px;
+}
+section div.frm a img.arquivo {
+    width: 200px;
+    margin-top: 20px;
+}
+footer ul {
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    background-color: #fff;
+    position: fixed;
+}
+footer ul li {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+footer ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #0c3;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+    color: #0c3;
+}
+div.card {
+    display: inline-block;
+    width: 350px;
+    height: 450px;
+    margin: 100px auto 60px 240px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+div.card img {
+    width: 350px;
+}
+div.card div.caixa p {
+    color: #000;
+}
+.button {
+    display: inline-block;
+    bottom: 15px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+    width: 200px;
+    transition: all .5s;
+    cursor: pointer;
+    vertical-align: middle;
+    -moz-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    -moz-transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: .5s;
+}
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: .5s;
+}
+.button:hover {
+    -moz-box-shadow: 0 35px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 35px 15px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
+}
+.button:hover span {
+    padding-right: 25px;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.caixa {
+    margin: 30px auto;
+}
+.mini_card {
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    margin: 30px auto 40px 80px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+.mini_card_site {
+    display: inline-block;
+    width: 250px;
+    height: 550px;
+    margin: 30px auto 40px 80px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+.mini_card_site_adm {
+    display: inline-block;
+    width: 250px;
+    height: 400px;
+    margin: 30px auto 40px 80px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+.mini_card img {
+    width: 250px;
+    height: 150px;
+}
+.mini_card div.mini_caixa p {
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000;
+}
+.mini_button {
+    display: inline-block;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 15px;
+    width: 100px;
+    transition: all .5s;
+    cursor: pointer;
+    vertical-align: middle;
+    -moz-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    -moz-transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.mini_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: .5s;
+}
+.mini_button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: .5s;
+}
+.mini_button:hover {
+    -moz-box-shadow: 0 35px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 35px 15px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
+}
+.mini_button:hover span {
+    padding-right: 15px;
+}
+.mini_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.mini_caixa {
+    margin: 20px auto 30px;
+}
+.adm_card {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 30px 120px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+.adm_card img {
+    width: 200px;
+    height: 150px;
+}
+.arquivo_card {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 30px 0;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+.arquivo_card img {
+    width: 200px;
+    height: 150px;
+}
+.adm_button {
+    display: inline-block;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    width: 180px;
+    height: 26px;
+    transition: all .5s;
+    cursor: pointer;
+    vertical-align: middle;
+    -moz-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    -moz-transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.adm_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: .5s;
+}
+.adm_button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: .5s;
+}
+.adm_button:hover {
+    -moz-box-shadow: 0 35px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 35px 15px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.3);
+}
+.adm_button:hover span {
+    padding-right: 15px;
+}
+.adm_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.shadow {
+    -moz-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.bloquear_texto {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.nome_upload {
+    color: #0c3;
+}
+.comentario {
+    display: inline-block;
+    width: 800px;
+    height: 300px;
+    margin: 30px auto 40px 80px;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+.bg-cinza {
+    background-color: #5E5D5D;
+}
+.bg-azul {
+    background-color: #0c3;
+}
+.bg-vermelho {
+    background-color: red;
+}
+.bg-amarelo {
+    background-color: #ffd700;
+}
+.bg-laranja {
+    background-color: #0c3;
+}
+.bg-verde {
+    background-color: #0c3;
+}
+.bg-roxo {
+    background-color: #609;
+}
+header nav ul li.entrar {
+    margin-left: 1400px;
+}
+li.entrar form#login {
+    width: 260px;
+    height: 220px;
+    border: solid 1px #0c3;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+}
+li.entrar button {
+    background-color: #fff;
+    border: #0c3 solid 1px;
+    color: #0c3;
+    font-size: 1rem;
+    font-family: 'Raleway';
+    padding: 15px;
+    margin: 20px auto auto 20px;
+}
+li.entrar button:hover {
+    background-color: #0c3;
+    border: #0c3 solid 1px;
+    color: #fff;
+}
+li.entrar form#login input {
+    width: 200px;
+    height: 40px;
+    background-color: #E5E5E5;
+    margin: 20px auto auto 20px;
+    font-size: 1rem;
+    display: inline-block;
+    font-family: 'Raleway';
+    border: none;
+}
+div.grupo img.integrante {
+    width: 200px;
+    height: 200px;
+}
+div.grupo {
+    display: inline-block;
+    margin: 50px auto auto 65px;
+}
+p i q {
+    color: #5E5D5D;
+}
+h2 {
+    color: #0c3;
+}
+div#adm {
+    width: 150px;
+    height: 100px;
+    border: solid 1px #0c3;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+}
+#snackbar {
+    visibility: hidden;
+    width: 250px;
+    margin-left: -130px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 200px;
+    border: solid #0c3 1px;
+}
+#snackbar a {
+    margin: 10px;
+}
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 1s 10s;
+    animation: fadein 0.5s, fadeout 1s 10s;
+}
+@-webkit-keyframes fadein {
+    from {
+    bottom: 0;
+    opacity: 0;
+}
+to {
+    bottom: 200px;
+    opacity: 1;
+}
+}@keyframes fadein {
+    from {
+    bottom: 0;
+    opacity: 0;
+}
+to {
+    bottom: 200px;
+    opacity: 1;
+}
+}@-webkit-keyframes fadeout {
+    from {
+    bottom: 200px;
+    opacity: 1;
+}
+to {
+    bottom: 0;
+    opacity: 0;
+}
+}@keyframes fadeout {
+    from {
+    bottom: 200px;
+    opacity: 1;
+}
+to {
+    bottom: 0;
+    opacity: 0;
+}
+}.button_voltar {
+    display: inline-block;
+    bottom: 15px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 15px;
+    margin: 44px auto auto 30px;
+    width: 100px;
+    transition: all .5s;
+    cursor: pointer;
+    vertical-align: middle;
+    -moz-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    -moz-transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    text-decoration: none;
+}
+.not_found {
+    margin: 100px;
+    color: #c03;
+    font-size: 35px;
+}
+.base {
+    margin-bottom: 100px;
+}
+.esp {
+    margin-left: 30px;
+}
+span.nome {
+    color: #33f;
+}
