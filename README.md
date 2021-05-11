@@ -7,7 +7,7 @@
 </p>
 <p>Caso queria acessar a area do ADM e testar as funções Insert e Delete
   
- Email:briantbini@outlook.com
- Senha:123456
+ Email: briantbini@outlook.com
+ Senha: 123456
  
 </p>
